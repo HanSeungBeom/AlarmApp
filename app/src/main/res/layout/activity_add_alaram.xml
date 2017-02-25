@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <ImageView
+            android:src="@mipmap/icon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="right"
+            android:paddingRight="3dp"
+            />
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+<android.support.v7.widget.GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4"
+     app:columnCount="3">
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:fontFamily="casual"
+        android:text="12:34 pm"
+        android:textColor="@color/white"
+         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+
+        android:background="@color/colorPrimary"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="2"
+        app:layout_columnSpan="3"
+        android:gravity="center"
+        android:elevation="4dp"
+
+        />
+
+    <TextView
+        android:gravity="center"
+        android:text="@string/add_alarm_activity_notice"
+        app:layout_columnSpan="3"
+        app:layout_rowWeight="1"
+        app:layout_columnWeight="1"
+        android:textColor="@color/colorP1"
+        />
+    <ImageView
+        android:id="@+id/iv_bellType"
+        android:src="@mipmap/belltype_vib"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="2"
+        android:gravity="center"
+        android:padding="16dp"
+
+        />
+
+    <ImageView
+
+        android:id="@+id/iv_repeat"
+        android:src="@mipmap/repeat_off"
+        android:gravity="center"
+        app:layout_rowWeight="2"
+        app:layout_columnWeight="1"
+        android:padding="16dp"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_memo"
+        android:src="@mipmap/memo_off"
+        android:gravity="center"
+        app:layout_rowWeight="2"
+        app:layout_columnWeight="1"
+        android:padding="16dp"
+         />
+
+    <TextView
+        android:id="@+id/tv_bellType"
+        android:text="@string/add_alaram_tv_belltype_defalut"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_repeat"
+        android:text="@string/add_alaram_tv_repeat"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/tv_memo"
+        android:text="@string/add_alaram_tv_memo"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:gravity="center"
+        />
+
+</android.support.v7.widget.GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/gray">
+
+    <Button
+        android:id="@+id/ReisterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="add"
+        android:text="등록"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This layout defines the main activity screen and displays a list of tasks (if they exist),
+    and a floating action button that launches another activity.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+       >
+        <ImageView
+            android:src="@mipmap/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:fontFamily="cursive"
+            android:textSize="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- RecyclerView that is responsible for holding a list of task data -->
+
+        <!-- Floating action button that launches AddTaskActivity when clicked -->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:paddingBottom="8dp" />
+        />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/orange"
+            android:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:fabSize="normal"/>
+        <TextView
+            android:layout_margin="16dp"
+            android:textColor="@color/colorP1"
+            android:id="@+id/empty_view"
+            android:text="@string/no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>
+
