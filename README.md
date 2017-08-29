@@ -5,8 +5,9 @@ Udacity 수업을 듣고 만든 AlarmApp
  + ContentProvider을 이용한 데이터 확장성 고려.
  + RebootReceiver 와 Service를 이용하여 재부팅시에도 알람이 제대로 동작되게 구현.
 
-===
-## Screenshots
 
+
+
+## Screenshots
 ![Main](images/main.png)
-![ADD](images/ADD.png)
+![ADD](images/add.png)
